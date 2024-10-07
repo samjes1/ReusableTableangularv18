@@ -1,23 +1,22 @@
 [
-    {
-      "nombre": "Logitech",
-      "Price": "$100",
-        "RGB": "Yes"
-    },
-    {
-      "nombre": "Redragon",
-      "Price": "$65",
-        "RGB": "Yes"
-    },
-    {
-        "nombre": "Halion",
-        "Price": "$5",
-          "RGB": "no"
-      },
-      {
-        "nombre": "Genius kGaming",
-        "Price": "$125",
-          "RGB": "Yes"
-      }
-  ]
-  
+  {
+    "nombre": "Logitech",
+    "price": "$100",
+    "RGB": "Yes"
+  },
+  {
+    "nombre": "Redragon",
+    "price": "$65",
+    "RGB": "Yes"
+  },
+  {
+    "nombre": "Halion",
+    "price": "$5",
+    "RGB": "no"
+  },
+  {
+    "nombre": "Genius kGaming",
+    "price": "$125",
+    "RGB": "Yes"
+  }
+]

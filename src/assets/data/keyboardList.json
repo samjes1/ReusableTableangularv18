@@ -1,14 +1,15 @@
 [
   {
     "nombre": "T-dagger",
-    "Color": "white",
-    "Category": "keyboard",
-    "Price": 100
+    "color": "white",
+    "category": "keyboard",
+    "price": 100
   },
   {
     "nombre": "Redragon",
-    "Color": "pink",
-    "Category": "keyboard",
-    "Price": 50
+    "color": "pink",
+    "category": "keyboard",
+    "price": 50
   }
 ]
+

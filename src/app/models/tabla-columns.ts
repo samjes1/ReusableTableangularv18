@@ -1,7 +1,7 @@
 import { KeyboardResponse } from "./keyboard";
 import { MouseResponse } from "./mouse";
 
-export interface Action<T = any>{
+export interface Accion<T = any>{
     accion: string; // editar o eliminar
     fila?: T; // registrar 
 }

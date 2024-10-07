@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Action } from '../../models/tabla-columns';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Accion } from '../../models/tabla-columns';
 
 @Component({
   selector: 'app-table-data',
@@ -8,7 +8,11 @@ import { Action } from '../../models/tabla-columns';
   templateUrl: './table-data.component.html',
   styleUrl: './table-data.component.css'
 })
-export class TableDataComponent {
+export class TableDataComponent implements OnInit {
+  ngOnInit(): void {
+   console.log("Hola");
+   
+  }
 
   title = '';
   columnas: string[] = [];
@@ -26,7 +30,7 @@ export class TableDataComponent {
     this.dataSource = data; 
   }
 
-  @Output() action: EventEmitter<Action> = new EventEmitter();
+  @Output() action: EventEmitter<Accion> = new EventEmitter();
 
   onAction(accion: string, row?: any) {
     this.action.emit({ accion: accion, fila: row });

@@ -1,15 +1,15 @@
 export interface IKeyboard {
     nombre: string;
-    Color: string; 
-    Category: string; 
-    Price: number; 
+    color: string; 
+    category: string; 
+    price: number; 
 }
 
 export class KeyboardResponse {
     nombre = '';
-    Color = ''; 
-    Category = '';
-    Price = 0;
+    color = ''; 
+    category = '';
+    price = 0;
 }
 
 

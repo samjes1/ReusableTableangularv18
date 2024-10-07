@@ -8,13 +8,18 @@ import { IMouse } from '../models/mouse';
   providedIn: 'root'
 })
 export class ProductService {
+  
+  private keyboardUrl = '/assets/data/keyboardList.json';
+  private mouseUrl = '/public/data/mouseList.json';
+
 
   constructor(private http: HttpClient) { }
   
-  obtenerKeyboardList(): Observable<IKeyboard[]> {
-    return this.http.get<IKeyboard[]>("/assets/data/keyboardList.json");
+  obtenerKeyboardList():Observable<IKeyboard[]> {
+      
+    return this.http.get<IKeyboard[]>(this.keyboardUrl);
   }
-  obtenerMouseList(): Observable<IMouse[]> { 
-    return this.http.get<IMouse[]>('/assets/data/mouseList.json');
+  obtenerMouseList():Observable<IMouse[]> { 
+    return this.http.get<IMouse[]>("/public/data/mouseList.json");
    }
 }
