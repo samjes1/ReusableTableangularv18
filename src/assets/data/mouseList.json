@@ -1,0 +1,23 @@
+[
+    {
+      "nombre": "Logitech",
+      "Price": "$100",
+        "RGB": "Yes"
+    },
+    {
+      "nombre": "Redragon",
+      "Price": "$65",
+        "RGB": "Yes"
+    },
+    {
+        "nombre": "Halion",
+        "Price": "$5",
+          "RGB": "no"
+      },
+      {
+        "nombre": "Genius kGaming",
+        "Price": "$125",
+          "RGB": "Yes"
+      }
+  ]
+  
