@@ -1,11 +1,11 @@
 export interface IMouse {
     nombre: string;
-    Price: number;
+    price: number;
     RGB: string
 }
 
 export class MouseResponse {
     nombre = '';
-    Price = 0;
+    price = 0;
     RGB = ''
 }
