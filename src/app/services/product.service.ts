@@ -10,7 +10,7 @@ import { IMouse } from '../models/mouse';
 export class ProductService {
   
   private keyboardUrl = '/assets/data/keyboardList.json';
-  private mouseUrl = '/public/data/mouseList.json';
+  private mouseUrl = '/assets/data/mouseList.json'; /// ruta mala verificar 
 
 
   constructor(private http: HttpClient) { }
@@ -20,6 +20,6 @@ export class ProductService {
     return this.http.get<IKeyboard[]>(this.keyboardUrl);
   }
   obtenerMouseList():Observable<IMouse[]> { 
-    return this.http.get<IMouse[]>("/public/data/mouseList.json");
+    return this.http.get<IMouse[]>(this.mouseUrl);
    }
 }
