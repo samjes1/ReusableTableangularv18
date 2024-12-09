@@ -2,8 +2,10 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     {
-        path: '', redirectTo: '/keyboardList', pathMatch: 'full'
+        path: '', redirectTo: '/keyboardlist', pathMatch: 'full'
     },
+
+
     {
         path: 'mouselist', loadComponent:() => import('./pages/mouse-list/mouse-list.component'),
     },

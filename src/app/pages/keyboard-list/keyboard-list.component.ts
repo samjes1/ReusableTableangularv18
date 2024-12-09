@@ -1,12 +1,12 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../services/product.service';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { IKeyboard } from '../../models/keyboard';
 import { Accion, getEntityPropiedades } from '../../models/tabla-columns';
 import { TableDataComponent } from '../../components/table-data/table-data.component';
 
 @Component({
-  selector: 'app-keyboarb-list',
+  selector: 'app-keyboard-list',
   standalone: true,
   imports: [TableDataComponent, HttpClientModule],
   templateUrl: './keyboard-list.component.html',
@@ -22,7 +22,7 @@ export default class KeyboardListComponent implements OnInit {
     keyboardList:IKeyboard[]=[];
     columnas: string[] = [];
   
-    title:string = 'Keyboards';
+    title:string = 'keyboard';
   
     ngOnInit(): void {
       this.columnas = getEntityPropiedades('keyboard');
@@ -32,7 +32,7 @@ export default class KeyboardListComponent implements OnInit {
         this.keyboardList = data;
   
            
-        console.log("hola", this.keyboardList);
+        console.log("hola de los keyboards, tu estas aqui", this.keyboardList);
       })
   
     }
