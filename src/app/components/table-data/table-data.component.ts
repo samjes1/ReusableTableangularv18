@@ -17,7 +17,7 @@ import { Router, RouterLink} from '@angular/router';
   styleUrl: './table-data.component.css',
 })
 export class TableDataComponent implements OnInit {
-  selectedOption = signal(['mouselist']);
+  selectedOption = signal('mouselist');
 
   constructor(private router: Router) {}
 
@@ -50,6 +50,7 @@ export class TableDataComponent implements OnInit {
   onOptionChangeProductList(event: Event) {
     const selectElement = event.target as HTMLSelectElement;
     this.selectedOption.set(selectElement.value); // Actualiza el valor seleccionado
-    this.router.navigate([this.selectedOption()]); // Navega a la ruta seleccionada
+    console.log('Opción seleccionada:', this.selectedOption());
+    this.router.navigate([`/${this.selectedOption()}`]); // Navega a la ruta seleccionada
   }
 }
